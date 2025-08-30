@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>YouTube Navbar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  <style>
+    
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #1c1c1c;
+      padding: 10px 16px;
+      color: white;
+    }
+
+    .navbar-left,
+    .navbar-center,
+    .navbar-right {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: bold;
+      margin-left: 10px;
+    }
+
+    .search-box input {
+      width: 300px;
+      padding: 6px;
+    }
+
+    .search-box button {
+      padding: 6px 10px;
+      margin-left: 4px;
+      background-color: #1c1c1c;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .icon {
+      margin: 0 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .fa-youtube {
+      color: red;
+    }
+
+    .icon:hover,
+    .logo:hover {
+      transform: scale(1.2);
+      color: #ffffff;
+      transition: all 0.3s ease;
+    }
+
+    .search-box button:hover {
+      transform: scale(1.2);
+    }
+
+    /* Video düzeni */
+    .video-section {
+      display: flex;
+      gap: 20px;
+      padding: 30px 55px;
+      align-items: flex-start;
+    }
+
+    .main-video {
+      flex: 2;
+    }
+
+    .main-video iframe {
+      width: 700px;
+      height: 400px;
+      border-radius: 10px;
+      border: none;
+    }
+
+    .video-title {
+      margin-top: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #000000;
+    }
+
+    /* Video düzeni */
+    .video-section {
+      display: flex;
+      gap: 20px;
+      padding: 30px 55px;
+      align-items: flex-start;
+    }
+
+    .side-video {
+      flex: 2;
+    }
+
+    .side-video iframe {
+      width: 300px;
+      height: 200px;
+      border-radius: 10px;
+      border: none;
+    }
+
+    .video-title {
+      margin-top: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #000000;
+    }
+
+    p {
+      color: black;
+    }
+
+    .side-title {
+      margin-top: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #000000;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="navbar">
+    <div class="navbar-left">
+      <span class="icon">☰</span>
+      <span class="logo">YouTube <i class="fa-brands fa-youtube"></i></span>
+    </div>
+
+    <div class="navbar-center">
+      <div class="search-box">
+        <input type="text" placeholder="Search">
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      <span class="icon"><i class="fa-solid fa-microphone"></i></span>
+    </div>
+
+    <div class="navbar-right">
+      <span class="icon"><i class="fa-solid fa-video"></i></span>
+      <span class="icon"><i class="fa-solid fa-bell"></i></span>
+      <span class="icon"><i class="fa-solid fa-user"></i></span>
+    </div>
+  </div>
+
+  <div class="video-section">
+    <!-- Büyük Video -->
+    <div class="main-video">
+      <iframe src="https://www.youtube.com/embed/ZLfzpgMneR4?si=xiec958Yn_m6ke8C" title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+      <p class="video-title">🔥 Crackling Fireplace with Cozy Fire Ambience. Fireplace Video 4K for Stress Relieve</p>
+    </div>
+
+    <!-- Yan Videolar -->
+    <div class="side-videos">
+      <a class="side-video" href="https://youtu.be/CxNTwOd4MvA?si=Msa3VwK44OqezwgZ" target="_blank">
+        <iframe src="https://www.youtube.com/embed/CxNTwOd4MvA" allowfullscreen></iframe>
+        <p>The Coolest Dolby Vision 4K Video with Relaxing Music - 4K HDR 120 FPS</p>
+      </a>
+      <a class="side-video" href="https://youtu.be/G1hKzCkywM8?si=fQIPHLFdkrSGaA-a" target="_blank">
+        <iframe src="https://www.youtube.com/embed/G1hKzCkywM8" allowfullscreen></iframe>
+        <p>6 Hour 4K Beautiful places Aerial Views</p>
+      </a>
+    </div>
+  </div>
+
+</body>
+
+</html>>
